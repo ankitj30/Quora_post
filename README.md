@@ -30,4 +30,18 @@ Users can create, view, edit, and see posts dynamically.
 ---
 
 ## 📂 Project Structure
+Quora_post/
+│
+├── public/
+│ └── style.css
+│
+├── views/
+│ ├── index.ejs
+│ ├── new.ejs
+│ ├── edit.ejs
+│ └── show.ejs
+│
+├── index.js
+├── package.json
+└── README.md
 
