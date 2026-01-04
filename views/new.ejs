@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create a new post </title>
+    <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+    <div class="container">
+      <nav class="nav">
+        <div class="brand">
+          <div class="logo">AJ</div>
+          <div class="site">Quora Mini</div>
+        </div>
+        <div class="nav-menu">
+          <a href="/posts">Home</a>
+          <a href="/posts/new" class="btn">Create</a>
+        </div>
+      </nav>
+
+      <main style="margin-top:14px">
+        <h2>Create a new post</h2>
+        <form method="post" action="/posts">
+          <div class="form-row">
+            <label for="username">Username</label>
+            <input id="username" name="username" type="text" placeholder="e.g. hardik_pandya" required />
+          </div>
+          <div class="form-row">
+            <label for="title">Post</label>
+            <textarea id="title" name="title" placeholder="Write your post here..." required></textarea>
+          </div>
+          <div class="center">
+            <button class="btn" type="submit">Submit</button>
+          </div>
+        </form>
+      </main>
+    </div>
+</body>
+</html>

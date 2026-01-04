@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>all posts</title>
+    <link rel="stylesheet" href="/style.css" />
+    </head>
+  <body>
+    <div class="container">
+      <nav class="nav">
+        <div class="brand">
+          <div class="logo">AJ</div>
+          <div class="site">Quora Mini</div>
+        </div>
+        <div class="nav-menu">
+          <a href="/posts">Home</a>
+          <a href="/posts/new" class="btn">Create</a>
+        </div>
+      </nav>
+
+      <h1 style="margin-top:12px">Quora posts</h1>
+
+      <div class="grid">
+      <% for (let post of posts) { %>
+        <article class="card">
+          <h3 class="username">@<%= post.username %></h3>
+          <h4 class="post-title"><%= post.title %></h4>
+          <div class="center">
+            <a href="/posts/<%= post.id %>">See details</a>
+            <a href="/posts/<%= post.id %>/edit">Edit</a>
+          </div>
+        </article>
+      <% } %>
+      </div>
+
+      <footer>Built with ❤️ — small Quora clone demo</footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>post in detail</title>
+        <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+    <div class="container">
+        <nav class="nav">
+            <div class="brand">
+                <div class="logo">AJ</div>
+                <div class="site">Quora Mini</div>
+            </div>
+            <div class="nav-menu">
+                <a href="/posts">Home</a>
+                <a href="/posts/new" class="btn">Create</a>
+            </div>
+        </nav>
+
+        <main style="margin-top:14px">
+            <h2>Post Details</h2>
+            <p style="color:var(--muted);font-size:13px">Post id : <%=post.id %></p>
+            <article class="card">
+                <h3 class="username"><%= post.username %></h3>
+                <h4 class="post-title"><%= post.title %></h4>
+                <div style="margin-top:8px">
+                    <a href="/posts/<%= post.id %>/edit">Edit</a>
+                </div>
+            </article>
+        </main>
+        <footer>Built with ❤️ — small Quora clone demo</footer>
+    </div>
+</body>
+</html>
